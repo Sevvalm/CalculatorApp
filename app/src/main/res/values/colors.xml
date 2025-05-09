@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!--(+ - * /) -->
+    <color name="islemBackround">#FF9800</color>
+
+    <!--(=) -->
+    <color name="esittirBackround">#FF5722</color>
+
+
+    <color name="islemText">#FFFFFF</color>
+
+    <!--(AC +/- %) -->
+    <color name="ustSiraBackround">#E0E0E0</color>
+    <color name="ustSiraText">#212121</color>
+
+
+    <color name="sayiBackround">#E0E0E0</color>
+    <color name="sayiText">#FF000000</color>
+
+
+
+</resources>
