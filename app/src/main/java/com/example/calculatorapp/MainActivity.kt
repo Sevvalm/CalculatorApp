@@ -68,26 +68,21 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun sayiTiklandi(sayi:Int){
-//        if (binding.textViewIslem.text.toString() == "0" ) {
-//            binding.textViewIslem.text = sayi.toString()
-//        } else {
-//            binding.textViewIslem.text = binding.textViewIslem.text.toString() + sayi.toString()
-//        }
         if (binding.textViewIslem.text.toString() == "0" || islemYapiliyor && !binding.textViewIslem.text.contains("+${sayi}")) {
-            // Eğer ekranda sadece 0 varsa veya işlem yapılıyor ve henüz ikinci sayı girilmemişse
+
             if (islemYapiliyor && binding.textViewIslem.text.toString().endsWith("+")) {
-                // İşlem yapılıyor ve + işareti gösteriliyorsa, ikinci sayıyı eklemeye başla
                 binding.textViewIslem.text = binding.textViewIslem.text.toString() + sayi.toString()
+
             } else if (islemYapiliyor) {
-                // İşlem yapılıyor ama ekranda başka bir şey varsa (ilk sayı girilmişse)
                 binding.textViewIslem.text = binding.textViewIslem.text.toString() + sayi.toString()
+
             } else {
-                // Ekranda sadece 0 varsa, onu sil ve yeni sayıyı göster
                 binding.textViewIslem.text = sayi.toString()
+
             }
         } else {
-            // Ekranda 0'dan farklı bir şey varsa, sayıyı sona ekle
             binding.textViewIslem.text = binding.textViewIslem.text.toString() + sayi.toString()
+
         }
     }
 
